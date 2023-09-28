@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="moja strona"/>
+<meta name="description" content="moje zainteresowania"/>
+<link rel="Stylesheet" href="style.css">
+<title> Kontakt </title>
+</head>
+<body id="kontakt">
+<img src="logo.png">
+<div id="czas">
+<script type="text/javascript">
+function getTime() 
+{
+    return (new Date()).toLocaleTimeString();
+}
+document.getElementById('czas').innerHTML = getTime();
+setInterval(function() {
+    document.getElementById('czas').innerHTML = getTime();
+     
+}, 1000);
+</script>
+</div>
+<div id="g">
+<center>
+
+<a href="index.html"><div id="przycisk"><p> Aktualności </p></div></a>
+
+<div class="dropdown"> 
+ <p> O mnie </p>
+  <div class="dropdown-content">
+  <div id="przyciskplecy">
+	<a style="color: white;text-decoration:none;" href="omnie.html"><div id="przycis"><p> O mnie </p></div></a>
+    <a style="color: white;text-decoration:none;" href="zaintersowania.html"><div id="przycis"><p> Moje Zainteresowania </p></div></a>
+	<a style="color: white;text-decoration:none;" href="planlekcji.html"><div id="przycis"><p> Plan Lekcji </p></div></a>
+  </div>
+  </div>
+</div>
+<div class="dropdown" > 
+ <p> Galeria </p>
+  <div class="dropdown-content">
+  <div id="przyciskplecy">
+	<a style="color: white;text-decoration:none;" href="galeria.html"><div id="przycis"><p> Galeria </p></div></a>
+    <a style="color: white;text-decoration:none;" href="passat.html"><div id="przycis"><p> Galeria Najlepszego Auta </p></div></a>
+    <a style="color: white;text-decoration:none;" href="maska.html"><div id="przycis"><p> Maska i wycinanie zdjęć </p></div></a>
+	</div>
+  </div>
+</div>
+<a href="kontakt.html"><div id="przycisk"><p> Kontakt </p></div></a>
+<a href="pliki.html"><div id="przycisk"><p> Pliki do pobrania </p></div></a>
+</div>
+<br><br><br><br>
+
+
+<div id="tekstkontakt">
+<center>
+<div id="info">
+<h1 style="color:green;"> Kontakt </h1>
+<h3 style="color:deeppink;"> Adres email remekszmyt@wp.pl 
+<p style="color:blue;"> Numer telefonu: 654 789 487 </p>
+<p style="color: Chocolate"> Adres: Dworcowa 9, 88-300 Mogilno </p> </h3>
+</div>
+
+<div id="formularz">
+<p> 
+<h2 style="color:greenyellow">Formularz kontaktowy</h2>
+<div id="send_form_status"></div>
+<form method="post" action="/send_form.php" id="contact_form">
+     <div style="color:forestgreen"><label for="name">Imię i nazwisko</label></div>
+     <div><input type="text" name="name" id="name" class="formField" /></div>
+     <div style="color:Cyan;"><label for="phone">Numer telefonu</label></div>
+     <div><input type="text" name="phone" id="phone" class="formField" /></div>
+     <div style="color:Cornsilk;"><label for="email">Adres email</label></div>
+     <div><input type="text" name="email" id="email" class="formField" /></div>
+     <div><label for="message">Treść wiadomości</label></div>
+     <div><textarea name="message" id="message" class="formField"></textarea></div>
+     <div><button id="sendBtn">Wyślij</button></div>
+	 
+</p>
+</form>
+</div>
+</center>
+</div>
+
+</body>
+</html>

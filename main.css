@@ -1,0 +1,117 @@
+body {
+	background-color:#ADD8E6;
+	text-shadow: 2px 2px white;
+}
+.logo {
+	width: 100%;
+	height: 140px;
+	font-size: 27px;
+}
+
+.nav {
+	margin-top: 100px;
+	width: 20%;
+	height: 500px;
+	float: left;
+	text-align: center;
+}
+
+.content {
+	margin-top: 25px;
+	width: 50%;
+	height: 850px;
+	float: left;
+}
+
+.tab {
+	font-size: 20px;
+	margin-top: 100px;
+	width: 30%;
+	height: 500px;
+	float: left;
+	text-align: center;
+	}
+	
+.footer {
+	clear: both;
+	width: 100%;
+	height: 100px;
+	position:relative;
+	bottom:-8%;
+}
+
+
+
+
+table, td, th {
+	border: 1px solid purple;
+}
+#logo {
+	width:40%;
+	height:40%;
+}
+#link {
+	text-decoration:none;
+	color:black;
+	text-shadow: 2px 2px white;
+}
+#b1 {
+	text-decoration:none;
+	color:white;
+}
+a {
+	text-decoration:none;
+}
+
+.btn {
+  position: relative;
+  border: 0;
+  padding: 0;
+  width: 220px;
+  height: 65px;
+  cursor: pointer;
+}
+.btn__text {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+.btn--4 {
+  background-color: #232426;
+}
+.btn--4 .btn__text {
+  position: relative;
+  z-index: 1;
+}
+.btn--4::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+.btn--4::after {
+  background-color: #232426;
+  transition: all 0.3s;
+}
+.btn--4:hover::after {
+  background-color: #e4562a;
+  transform: scale(1.1);
+}
+#zdjglowna {
+  width: 80%;
+  height: 80%;
+}
+#autkogl {
+  width: 40%;
+}
+#set {
+	width: 80%;
+	text-align:center;
+}
+#autkom {
+	width:25%;
+}

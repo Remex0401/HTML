@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="moja strona"/>
+<meta name="description" content="moje zainteresowania"/>
+<link rel="Stylesheet" href="style.css">
+<title> Aktualności </title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $("html").on("submit","#contact_form",function(e){
+    e.preventDefault();
+    $("#send_form_status").html('').hide();
+    var data=$("#contact_form").serialize();
+    $.post("/send_form.php",data,function(res){
+      $("#send_form_status").html(res.msg).show();
+      if(res.status==1){ 
+        $("#contact_form")[0].reset();
+      } 
+    });
+  });
+});
+</script>
+</head>
+<body id="index">
+<img src="logo.png">
+<div id="czas"></div>
+<script type="text/javascript">
+function getTime() 
+{
+    return (new Date()).toLocaleTimeString();
+}
+document.getElementById('czas').innerHTML = getTime();
+setInterval(function() {
+    document.getElementById('czas').innerHTML = getTime();
+     
+}, 1000);
+</script>
+<div id="g">
+<center>
+
+<a href="index.html"><div id="przycisk"><p> Aktualności </p></div></a>
+
+<div class="dropdown"> 
+ <p> O mnie </p>
+  <div class="dropdown-content">
+  <div id="przyciskplecy">
+	<a style="color: white;text-decoration:none;" href="omnie.html"><div id="przycis"><p> O mnie </p></div></a>
+    <a style="color: white;text-decoration:none;" href="zaintersowania.html"><div id="przycis"><p> Moje Zainteresowania </p></div></a>
+	<a style="color: white;text-decoration:none;" href="planlekcji.html"><div id="przycis"><p> Plan Lekcji </p></div></a>
+  </div>
+  </div>
+</div>
+<div class="dropdown" > 
+ <p> Galeria </p>
+  <div class="dropdown-content">
+  <div id="przyciskplecy">
+	<a style="color: white;text-decoration:none;" href="galeria.html"><div id="przycis"><p> Galeria </p></div></a>
+    <a style="color: white;text-decoration:none;" href="passat.html"><div id="przycis"><p> Galeria Najlepszego Auta </p></div></a>
+    <a style="color: white;text-decoration:none;" href="maska.html"><div id="przycis"><p> Maska i wycinanie zdjęć </p></div></a>
+	</div>
+  </div>
+</div>
+<a href="kontakt.html"><div id="przycisk"><p> Kontakt </p></div></a>
+<a href="pliki.html"><div id="przycisk"><p> Pliki do pobrania </p></div></a>
+
+</center>
+</div>
+<br><br><br><br><br>
+<div id="aktualnosci">
+<center>
+<h1>Aktualności</h1>
+<hr size="4" width="50%" color="orange"> 
+<p> 15.12.2020 </p>
+<img src="kartka.png">
+<hr size="4" width="50%" color="orange"> 
+<p> 13.10.2020 </p>
+<p> Dodanie planu lekcji na stronę </p>
+<hr size="4" width="50%" color="orange"> 
+<p> 29.09.2020 </p>
+<p> Dodanie strony na hosting </p>
+<hr size="4" width="50%" color="orange"> 
+<p> 15.09.2020 </p>
+<p> Utworzenie strony </p>
+<hr size="4" width="50%" color="orange"> 
+<p> 04.01.2002 </p>
+<p> Moje urodziny </p>
+<br><br><br>
+</div>
+
+
+</body>
+</html>

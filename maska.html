@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="moja strona"/>
+<meta name="description" content="moje zainteresowania"/>
+<link rel="Stylesheet" href="style.css">
+<title> Galeria </title>
+</head>
+<body id="galeria">
+<img src="logo.png">
+<div id="czas">
+<script type="text/javascript">
+function getTime() 
+{
+    return (new Date()).toLocaleTimeString();
+}
+document.getElementById('czas').innerHTML = getTime();
+setInterval(function() {
+    document.getElementById('czas').innerHTML = getTime();
+     
+}, 1000);
+</script>
+</div>
+<div id="g">
+<center>
+
+<a href="index.html"><div id="przycisk"><p> Aktualności </p></div></a>
+
+<div class="dropdown"> 
+ <p> O mnie </p>
+  <div class="dropdown-content">
+  <div id="przyciskplecy">
+	<a style="color: white;text-decoration:none;" href="omnie.html"><div id="przycis"><p> O mnie </p></div></a>
+    <a style="color: white;text-decoration:none;" href="zaintersowania.html"><div id="przycis"><p> Moje Zainteresowania </p></div></a>
+	<a style="color: white;text-decoration:none;" href="planlekcji.html"><div id="przycis"><p> Plan Lekcji </p></div></a>
+  </div>
+  </div>
+</div>
+<div class="dropdown" > 
+ <p> Galeria </p>
+  <div class="dropdown-content">
+  <div id="przyciskplecy">
+	<a style="color: white;text-decoration:none;" href="galeria.html"><div id="przycis"><p> Galeria </p></div></a>
+    <a style="color: white;text-decoration:none;" href="passat.html"><div id="przycis"><p> Galeria Najlepszego Auta </p></div></a>
+    <a style="color: white;text-decoration:none;" href="maska.html"><div id="przycis"><p> Maska i wycinanie zdjęć </p></div></a>
+	</div>
+  </div>
+</div>
+<a href="kontakt.html"><div id="przycisk"><p> Kontakt </p></div></a>
+<a href="pliki.html"><div id="przycisk"><p> Pliki do pobrania </p></div></a>
+
+</div>
+<br><br><br>
+<div id="tekstzainteresowania">
+<h1><center> Zdjęcia edytowane w gimpie </center></h1>
+<center><img src="maska.png"> 
+<img src="wycinanie.png"> </center>
+</div>
+</body>
+</html>

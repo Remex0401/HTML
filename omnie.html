@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="moja strona"/>
+<meta name="description" content="moje zainteresowania"/>
+<link rel="Stylesheet" href="style.css">
+<title> O mnie </title>
+</head>
+<body id="mnie">
+<img src="logo.png">
+<div id="czas">
+<script type="text/javascript">
+function getTime() 
+{
+    return (new Date()).toLocaleTimeString();
+}
+document.getElementById('czas').innerHTML = getTime();
+setInterval(function() {
+    document.getElementById('czas').innerHTML = getTime();
+     
+}, 1000);
+</script>
+</div>
+<div id="g" style="color:green;">
+<center>
+
+<a href="index.html"><div id="przycisk"><p> Aktualności </p></div></a>
+
+<div class="dropdown"> 
+ <p> O mnie </p>
+  <div class="dropdown-content">
+  <div id="przyciskplecy">
+	<a style="color: white;text-decoration:none;" href="omnie.html"><div id="przycis"><p> O mnie </p></div></a>
+    <a style="color: white;text-decoration:none;" href="zaintersowania.html"><div id="przycis"><p> Moje Zainteresowania </p></div></a>
+	<a style="color: white;text-decoration:none;" href="planlekcji.html"><div id="przycis"><p> Plan Lekcji </p></div></a>
+  </div>
+  </div>
+</div>
+<div class="dropdown" > 
+ <p> Galeria </p>
+  <div class="dropdown-content">
+  <div id="przyciskplecy">
+	<a style="color: white;text-decoration:none;" href="galeria.html"><div id="przycis"><p> Galeria </p></div></a>
+    <a style="color: white;text-decoration:none;" href="passat.html"><div id="przycis"><p> Galeria Najlepszego Auta </p></div></a>
+    <a style="color: white;text-decoration:none;" href="maska.html"><div id="przycis"><p> Maska i wycinanie zdjęć </p></div></a>
+	</div>
+  </div>
+</div>
+<a href="kontakt.html"><div id="przycisk"><p> Kontakt </p></div></a>
+<a href="pliki.html"><div id="przycisk"><p> Pliki do pobrania </p></div></a>
+</div>
+<br><br><br><br><br><br>
+<div id="tekstomnie">
+<h1 style="color:MediumPurple;"><center> Cześc jestem Remek </h1></center>
+<b style="color:Gold;"><center> Cześć, jestem Remek i chodzę do ZS Mogilno. Moje zainteresowania to infromatyka oraz motoryzacja. </center>
+<center><img src="przylbice1.jpg"> </center>
+<p style="color:GoldenRod;"><center> Tutaj widać mnie podczas pomocy w przeciwdziałaniu pandemii </center>
+</div>
+</body>
+</html>

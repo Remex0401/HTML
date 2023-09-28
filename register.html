@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title> Najlepsza strona </title>
+<meta name="description" content="Najlepsza strona jaką stworzył Remigiusz Szmyt">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<form action="login.php" method="post">
+<label for="login"> Podaj login: </label>
+<input type="text" id="login" placeholder="istniejący nick cs">
+<p>
+<label for="haslo"> Podaj hasło: </label>
+<input type="password" id="haslo"> </label>
+</p> <p>
+<label for="haslo2"> Powtórz hasło: </label>
+<input type="password" id="haslo2"> </label>
+</p> <p>
+<label> Wybierz płeć:
+<label> <input type="radio" name="plec" value= "m" checked="on"> Mężczyzna </label>
+<label> <input type="radio" name="plec" value= "k" > Kobieta </label> 
+</label>
+</p> <p>
+<label for="check1"> Akceptuję regulamin </label>
+<label> <input type="checkbox" id="check1" checked="on"> 
+</p> <p>
+<label for="check2"> Wyrażam zgodę na otrzymywanie newslettera </label>
+<label> <input type="checkbox" id="check2"> 
+</p> <p>
+<label for="sele1"> Wybierz ulubioną broń </label>
+<select id="sele1"> 
+<option value="57"> Five-seven </option>
+<option value="dgl"> Deagle </option>
+<option value="AWP"> AWP </option>
+<option value="ak"> AK-47 </option>
+<option value="mp9"> MP9 </option>
+</select>
+</p> <p>
+<label for="sele2"> Wybierz ulubione mapy </label>
+<select id="sele2" multiple>
+<option value="dd2"> Dust2 </option>
+<option value="mir"> Mirage </option>
+<option value="cch"> Cache </option>
+<option value="inf"> Inferno </option>
+<option value="nuk"> Nuke </option>
+<option value="trn"> Train </option>
+</select>
+</p> <p>
+<label for="opis"> Kilka słów o sobie </label>
+<textarea id="opis" rows="5" cols="35" placeholder="Opisz swoją przygodę z CS:GO, dlaczego wybrałeś akurat nasz klan?">
+</textarea>
+</p> <p>
+<input type="submit" value="Zarejestruj się!">
+</form>
+
+</body>
+</html>

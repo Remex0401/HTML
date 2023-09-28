@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="moja strona"/>
+<meta name="description" content="moje zainteresowania"/>
+<link rel="Stylesheet" href="style.css">
+<title> Plan Lekcji </title>
+</head>
+<body id="plann">
+<img src="logo.png">
+<div id="czas">
+<script type="text/javascript">
+function getTime() 
+{
+    return (new Date()).toLocaleTimeString();
+}
+document.getElementById('czas').innerHTML = getTime();
+setInterval(function() {
+    document.getElementById('czas').innerHTML = getTime();
+     
+}, 1000);
+</script>
+</div>
+<div id="g">
+<style>
+audio::-webkit-media-controls-panel{ background-color:orange !important; };
+</style>
+
+<center>
+
+<a href="index.html"><div id="przycisk"><p> Aktualności </p></div></a>
+
+<div class="dropdown"> 
+ <p> O mnie </p>
+  <div class="dropdown-content">
+  <div id="przyciskplecy">
+	<a style="color: white;text-decoration:none;" href="omnie.html"><div id="przycis"><p> O mnie </p></div></a>
+    <a style="color: white;text-decoration:none;" href="zaintersowania.html"><div id="przycis"><p> Moje Zainteresowania </p></div></a>
+	<a style="color: white;text-decoration:none;" href="planlekcji.html"><div id="przycis"><p> Plan Lekcji </p></div></a>
+  </div>
+  </div>
+</div>
+<div class="dropdown" > 
+ <p> Galeria </p>
+  <div class="dropdown-content">
+  <div id="przyciskplecy">
+	<a style="color: white;text-decoration:none;" href="galeria.html"><div id="przycis"><p> Galeria </p></div></a>
+    <a style="color: white;text-decoration:none;" href="passat.html"><div id="przycis"><p> Galeria Najlepszego Auta </p></div></a>
+    <a style="color: white;text-decoration:none;" href="maska.html"><div id="przycis"><p> Maska i wycinanie zdjęć </p></div></a>
+	</div>
+  </div>
+</div>
+<a href="kontakt.html"><div id="przycisk"><p> Kontakt </p></div></a>
+<div class="dropdown" > 
+ <p> Pliki </p>
+  <div class="dropdown-content">
+  <div id="przyciskplecy">
+	<a style="color: white;text-decoration:none;" href="pliki.html"><div id="przycis"><p> Pliki do pobrania </p></div></a>
+    <a style="color: white;text-decoration:none;" href="dzwieki.html"><div id="przycis"><p> Dzwieki </p></div></a>
+	</div>
+  </div>
+</div>
+</div>
+</center>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<center>
+<b> Przeglądarka nieobsługuje niestety niektórych formatów </b> <br><br><br><br>
+<b style="color:green;"> mp3 </b> <br>
+<audio controls>
+ <source src="rick.mp3"/>
+ </audio> <br>
+ <b style="color:green;"> m4r </b> <br>
+<audio controls>
+ <source src="rick.m4r"/>
+ </audio> <br>
+ <b style="color:green;"> amr </b> <br>
+<audio controls>
+ <source src="rick.amr"/>
+ </audio> <br>
+ <b style="color:green;"> mp2 </b> <br>
+<audio controls>
+ <source src="rick.mp2"/>
+ </audio> <br>
+ <b style="color:green;"> ogg </b> <br>
+<audio controls>
+ <source src="rick.ogg"/>
+ </audio> <br>
+ <b style="color:green;"> flac </b> <br>
+<audio controls> 
+ <source src="rick.flac"/>
+ </audio> <br>
+ <b style="color:green;"> wav </b> <br>
+<audio controls>
+ <source src="rick.wav"/>
+ </audio> <br>
+ 
+</body>
+</html>
