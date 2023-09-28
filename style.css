@@ -1,0 +1,175 @@
+#index {
+	background-image: url("tlo-niebo-bez1.jpg");
+}
+#czas {
+	float:right;
+	color: white;
+	font-size: 30px;
+	margin-top: 2%;
+}
+#g {
+	border-style: solid;
+	border-width: 4px;
+	border-color: black;
+	color: white;
+	width: 99%;
+	height: 7.5%;
+	background: rgba(0, 0, 0, 0.3);
+	position:absolute;
+}
+#przycisk {
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-color: red;
+	color: white;
+	width: 19.5%;
+	height: 50%;
+	margin-top: 0.5%;
+}
+#mnie { 
+	background-image: url("tlo-niebo-bez1.jpg");
+}
+#tekstomnie { 
+	position:enter;
+	margin-top: 4%;
+} 
+#zainteresowania{ 
+	background-image: url("tlo-niebo-bez1.jpg");
+	background-size:cover;
+}
+#tekstzainteresowania {
+	color:orane;
+	position:center;
+	margin-top: 7%;
+}
+#powrot {
+	color: Red;
+	margin-left: 97%;
+}
+#ja2 { 
+	width: 40%;
+}
+#tyg {
+	width:20%;
+}
+#slonce {
+	width: 20%;
+	margin-left: 18px;
+}
+#sprezyna {
+	width: 20%;
+}
+#galeria {
+	background-image: url("tlo-niebo-bez1.jpg");
+	background-size:cover;
+	color: orange;
+}
+#plikid { 
+	background-image: url("tlo-niebo-bez1.jpg");
+	background-size: cover;
+}
+#plann {
+	background-image: url("tlo-niebo-bez1.jpg");
+	background-size:cover;
+}
+#kontakt {
+	background-image: url("tlo-niebo-bez1.jpg");
+}
+table, th, td {
+	border:4px solid green;
+	border-style:solid;
+	border-collapse: collapse
+}
+table {
+	width: 60%;
+	margin-left: 20%;
+	text-align:center;
+}
+#tekstkontakt {
+	color:orane;
+	margin-top: 5%;
+	position:center;
+	align-items: center;
+	vertical-align: middle;
+}
+#info {
+	position: relative; 
+	display:inline-block;
+	vertical-align: middle;
+}
+#formularz { 
+	position: relative ;
+	display:inline-block;
+	vertical-align: middle;
+}
+#aktualnosci {
+	border-style: solid;
+	border-width: 4px;
+	border-color: black;
+	color: white;
+	width: 99%;
+	background: rgba(0, 0, 0, 0.3);
+	margin-top: 6%;
+	position:absolute;
+}
+#passat {
+	background-image: url("tlo-niebo-bez1.jpg");
+	background-size:auto;
+	color: black;
+}
+#passattekst {
+	border-style: solid;
+	border-width: 4px;
+	border-color: black;
+	color: white;
+	width: 99%;
+	background: rgba(0, 0, 0, 0.3);
+	margin-top: 1%;
+	position:relative;
+}
+
+.dropdown {
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-color: red;
+	color: white;
+	width: 19.5%;
+	margin-top: 0.5%;
+	height: 50%;
+	z-index:1 ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+	width: 98%;
+	margin-left: -270px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#przycis {
+	border-style: solid;
+	border-width: 2px;
+	border-color: red;
+	color: white;
+	width: 98%;
+	height: 50%;
+	margin-top: 0.5%;
+	
+}
+#przyciskplecy {
+	border-style: solid;
+	border-width: 4px;
+	border-color: black;
+	color: white;
+	background: rgba(0, 0, 0, 0.3);
+	position:absolute;
+	margin-top: 0.2%;
+	margin-left: 14.5%;
+	width: 20%;
+}
