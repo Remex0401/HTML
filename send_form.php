@@ -11,7 +11,7 @@ if($name && $email && $phone && $message){
  $message_body.="Adres email: $email\n";
  $message_body.="Numer telefonu: $phone\n\n";
  $message_body.=$message;
- if(mail("millener333@wp.pl","Formularz kontaktowy",$message_body,$headers)){
+ if(mail("remekszmyt@wp.pl","Formularz kontaktowy",$message_body,$headers)){
  $json=array("status"=>1,"msg"=>"<p class='status_ok'>Twój formularz został pomyślnie wysłany.</p>");
  }
  else{
